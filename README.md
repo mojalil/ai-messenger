@@ -1,4 +1,4 @@
-# ChatGPT Messenger
+# AI Whatsapp Messenger
 
 This project is a WhatsApp messenger bot that uses ChatGPT and Firebase.
 
