@@ -1,5 +1,7 @@
+import Sidebar from "@/components/SideBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({
       <body>
         <div className="flex">
           {/* Sidebar */}
+          <Sidebar/>
           {/* Notifications */}
           <div className="bg-[#343541] flex-1"> {children} </div>
         </div>
