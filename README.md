@@ -1,9 +1,20 @@
-# AI Whatsapp Messenger
+# AI Messenger
 
 This project is a WhatsApp messenger bot that uses ChatGPT and Firebase.
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/mojalil/ai-image-generator)
 [![Twitter Follow](https://img.shields.io/twitter/follow/motypes?style=social)](https://twitter.com/@motypes)
+
+## Contents
+
+- [AI Messenger](#ai-messenger)
+  - [Contents](#contents)
+  - [Getting Started](#getting-started)
+  - [Usage](#usage)
+  - [Contributions](#contributions)
+  - [Dev Notes](#dev-notes)
+  - [Contact](#contact)
+
 
 ## Getting Started
 
@@ -21,6 +32,10 @@ To use the ChatGPT Messenger, add the following number to your contacts: [Redact
 ## Contributions
 
 Contributions to this project are welcome! To contribute, please fork the repository and submit a pull request.
+
+## Dev Notes
+
+If you're using firebase / Google for authentication. You will need to whitelist our app via console.cloud.google.com
 
 ## Contact
 
