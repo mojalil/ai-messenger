@@ -13,6 +13,7 @@ This project is a WhatsApp messenger bot that uses ChatGPT and Firebase.
   - [Usage](#usage)
   - [Contributions](#contributions)
   - [Dev Notes](#dev-notes)
+    - [Useful tools](#useful-tools)
   - [Contact](#contact)
 
 
@@ -36,6 +37,10 @@ Contributions to this project are welcome! To contribute, please fork the reposi
 ## Dev Notes
 
 If you're using firebase / Google for authentication. You will need to whitelist our app via console.cloud.google.com
+
+### Useful tools
+
+Remove line breaks: https://www.textfixer.com/tools/remove-line-breaks.php
 
 ## Contact
 

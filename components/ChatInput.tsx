@@ -4,6 +4,7 @@ import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import { FormEvent, useState } from "react";
+import { toast } from "react-hot-toast";
 
 type Props = {
   chatId: string;
@@ -37,6 +38,7 @@ const ChatInput = ({ chatId }: Props) => {
     await addDoc(collection(db, "users", session?.user?.email!, "chats", chatId, "messages"), message)  
 
     // Add toaster notification here
+    const notification = toast.loading("AI is thinking...")
 
     await fetch('/api/askQuestion', {
         method: 'POST',
@@ -48,6 +50,7 @@ const ChatInput = ({ chatId }: Props) => {
         })
     }).then(() => {
         // Add toaster notification here
+        toast.success("AI has responded!", {id: notification})
     }) 
 
 
