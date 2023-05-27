@@ -12,7 +12,7 @@ const Message = ({ message }: Props) => {
     className={`py-5 text-white text-sm ${isChatGpt && "bg-[#434654]"}`}>
     <div className="flex space-x-5 px-10 max-2xl mx-auto">
       <img src={message.data().user.avatar} alt="" className=" h-8 w-8"></img>
-      <p className="text-white text-sm pt-1">{text}</p>
+      <p className="text-sm pt-1">{text}</p>
     </div>
     </div>
   );
