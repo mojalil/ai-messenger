@@ -38,7 +38,7 @@ const ChatInput = ({ chatId }: Props) => {
     await addDoc(collection(db, "users", session?.user?.email!, "chats", chatId, "messages"), message)  
 
     // Add toaster notification here
-    const notification = toast.loading("AI is thinking...")
+    const notification = toast.loading("AI is thinking...", {duration: 2})
 
     await fetch('/api/askQuestion', {
         method: 'POST',
